@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿//using System.Collections;
 //using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,8 +15,8 @@ public class CharacterMovement : MonoBehaviour
 
     //Serialized Field Variable Initialization
     [SerializeField] bool _doubleJumpEnabled = false;
-    [SerializeField] float _jumpPower = 2.0f;
-    [SerializeField] float _speed = 2.0f;
+    [SerializeField] float _jumpPower = 6.5f;
+    [SerializeField] float _speed = 4.5f;
 
     //***************
     //Awake Function to run on creation of the object
@@ -63,6 +63,12 @@ public class CharacterMovement : MonoBehaviour
                 _canJump = false;
             }
         }
+
+        if(rb.velocity.y < 0)
+        {
+            Vector2 pushDown = new Vector2(0, -1);
+            rb.AddForce(pushDown, ForceMode2D.Force);
+        }
     }
 
     //***************
@@ -70,8 +76,7 @@ public class CharacterMovement : MonoBehaviour
     //***************
     private void jump()
     {
-        Vector2 force = new Vector2(0, _jumpPower);
-        rb.AddForce(force, ForceMode2D.Impulse);
+        rb.velocity = new Vector2(0, _jumpPower);
     }
 
     private void OnCollisionEnter2D(Collision2D collider)
