@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: f008a2df92c75844dae963312f8ad12a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6766555413995355813
+    second: Spring_Tileset_0
+  - first:
+      213: -1160012013820754062
+    second: Spring_Tileset_1
+  - first:
+      213: 2800370167483952189
+    second: Spring_Tileset_2
+  - first:
+      213: 2794772062170625632
+    second: Spring_Tileset_3
+  - first:
+      213: 817469753665482665
+    second: Spring_Tileset_4
+  - first:
+      213: 3395914682293965818
+    second: Spring_Tileset_5
+  - first:
+      213: -6853614790782213095
+    second: Spring_Tileset_6
+  - first:
+      213: -4714232676919572429
+    second: Spring_Tileset_7
+  - first:
+      213: -5864140906312057022
+    second: Spring_Tileset_8
+  - first:
+      213: -5797671106183072196
+    second: Spring_Tileset_9
+  - first:
+      213: -1748629543834138528
+    second: Spring_Tileset_10
+  - first:
+      213: 1133744497073444849
+    second: Spring_Tileset_11
+  - first:
+      213: -3814997455585685222
+    second: Spring_Tileset_12
+  - first:
+      213: -2536017444329557174
+    second: Spring_Tileset_13
+  - first:
+      213: 3907319230259646682
+    second: Spring_Tileset_14
+  - first:
+      213: -2114682421256331165
+    second: Spring_Tileset_15
+  - first:
+      213: 1368561460157764120
+    second: Spring_Tileset_16
+  - first:
+      213: 2401301463645054561
+    second: Spring_Tileset_17
+  - first:
+      213: 6015215709468421767
+    second: Spring_Tileset_18
+  - first:
+      213: 3142967925307073311
+    second: Spring_Tileset_19
+  - first:
+      213: -5560883258981948901
+    second: Spring_Tileset_20
+  - first:
+      213: -4645432997348468574
+    second: Spring_Tileset_21
+  - first:
+      213: -1377329229523542036
+    second: Spring_Tileset_22
+  - first:
+      213: -704101502843958525
+    second: Spring_Tileset_23
+  - first:
+      213: -4654662369156714631
+    second: Spring_Tileset_24
+  - first:
+      213: 3774294029563949995
+    second: Spring_Tileset_25
+  - first:
+      213: 7297289665083650535
+    second: Spring_Tileset_26
+  - first:
+      213: 554057566579744288
+    second: Spring_Tileset_27
+  - first:
+      213: -5459249892211546461
+    second: Spring_Tileset_28
+  - first:
+      213: 249349214935463026
+    second: Spring_Tileset_29
+  - first:
+      213: 3960272639123489868
+    second: Spring_Tileset_30
+  - first:
+      213: -1168200335406149255
+    second: Spring_Tileset_31
+  - first:
+      213: 5289630233486535138
+    second: Spring_Tileset_32
+  - first:
+      213: 2427437520149278137
+    second: Spring_Tileset_33
+  - first:
+      213: -1602243828653008564
+    second: Spring_Tileset_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spring_Tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1570
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae703c5c42a7ed50800000000000000
+      internalID: 6766555413995355813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1572
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277470d283fc6efe0800000000000000
+      internalID: -1160012013820754062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1574
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c6b7094d9ecd620800000000000000
+      internalID: 2800370167483952189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_3
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1573
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066bdd9126609c620800000000000000
+      internalID: 2794772062170625632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1375
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af6bd9e86c385b00800000000000000
+      internalID: 817469753665482665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1375
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af35aa54966b02f20800000000000000
+      internalID: 3395914682293965818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1372
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9142018e8a113e0a0800000000000000
+      internalID: -6853614790782213095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1366
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3388baf7b5ea39eb0800000000000000
+      internalID: -4714232676919572429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1183
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fbe6e4ae26e9ea0800000000000000
+      internalID: -5864140906312057022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1180
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367967a8d88a8fa0800000000000000
+      internalID: -5797671106183072196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1177
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 068430cc1be9bb7e0800000000000000
+      internalID: -1748629543834138528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_11
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1175
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7dd1efc9edbbf00800000000000000
+      internalID: 1133744497073444849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 979
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11dbc0e6086e0bc0800000000000000
+      internalID: -3814997455585685222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 978
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43fa8e12914eccd0800000000000000
+      internalID: -2536017444329557174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_14
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 975
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0dda75326993630800000000000000
+      internalID: 3907319230259646682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_15
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 980
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360e04cba8327a2e0800000000000000
+      internalID: -2114682421256331165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 780
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8125ef5a56b1ef210800000000000000
+      internalID: 1368561460157764120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_17
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 777
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166603365f2235120800000000000000
+      internalID: 2401301463645054561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_18
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 773
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ee63a51d65a7350800000000000000
+      internalID: 6015215709468421767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_19
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 773
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13ef580da01e9b20800000000000000
+      internalID: 3142967925307073311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 586
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12e6f68326c3d2b0800000000000000
+      internalID: -5560883258981948901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_21
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 582
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a89a2d2d4b188fb0800000000000000
+      internalID: -4645432997348468574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_22
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 578
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef9c77fc5eb2ece0800000000000000
+      internalID: -1377329229523542036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_23
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 573
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bca25e9678a36f0800000000000000
+      internalID: -704101502843958525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 392
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f29099c31576fb0800000000000000
+      internalID: -4654662369156714631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_25
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 388
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3790e3c6cf06430800000000000000
+      internalID: 3774294029563949995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_26
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 385
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1b076a94e254560800000000000000
+      internalID: 7297289665083650535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_27
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 379
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e5a19db6860b700800000000000000
+      internalID: 554057566579744288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 199
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a624aab529dc34b0800000000000000
+      internalID: -5459249892211546461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 195
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27430453acdd57300800000000000000
+      internalID: 249349214935463026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_30
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 193
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4487ac9bf6b5f630800000000000000
+      internalID: 3960272639123489868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_31
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 186
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971df9dfbf7b9cfe0800000000000000
+      internalID: -1168200335406149255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_32
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 16
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9a124fbaa886940800000000000000
+      internalID: 5289630233486535138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 5
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bde3fe309dffa120800000000000000
+      internalID: 2427437520149278137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring_Tileset_34
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4953951abfa3c9e0800000000000000
+      internalID: -1602243828653008564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
