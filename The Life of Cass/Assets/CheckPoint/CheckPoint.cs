@@ -11,7 +11,7 @@ public class CheckPoint : MonoBehaviour
     private Vector3 startSpawn;
     private bool _raiseFlag;
     private bool _lowerFlag;
-    private GameObject _closestCP;
+    //private GameObject _closestCP;
     private GameObject _upwardFlag;
     private GameObject _downwardFlag;
 
@@ -21,7 +21,7 @@ public class CheckPoint : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         _upwardFlag = null;
         _downwardFlag = null;
-        _closestCP = null;
+        //_closestCP = null;
         _raiseFlag = false;
         _lowerFlag = false;
         _flagUp = new Vector3(0, 0, 180);
@@ -33,17 +33,72 @@ public class CheckPoint : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            if(gm.activeCP != null)
+            if(gm.activeCP == this.transform.parent.gameObject)
+            {
+                Debug.Log("YOS");
+                return;
+            }
+            if(gm.activeCP != null && gm.activeCP.tag != "Respawn")
             {
                 dropFlag(gm.activeCP);
             }
-            _closestCP = ClosestCP(other.transform.position);
-            gm.activeCP = _closestCP;
-            gm.spawnPosition = _closestCP.transform.position;
-            setFlag(_closestCP);
+            //_closestCP = ClosestCP(other.transform.position);//(REMOVED DUE TO QUICKER OPTION)
+            gm.activeCP = this.transform.parent.gameObject;
+            gm.spawnPosition = gm.activeCP.transform.position;
+            setFlag(gm.activeCP);
         }
     }
 
+   void FixedUpdate()
+    {
+        if(_raiseFlag)
+        {
+            Vector3 point = _upwardFlag.transform.position;
+            Vector3 axis = new Vector3(0, 0, 1);
+            _upwardFlag.transform.RotateAround(point, axis, Time.deltaTime * 750f);
+            setFlag(_upwardFlag);
+        }
+        if(_lowerFlag)
+        {
+            Vector3 point = _downwardFlag.transform.position;
+            Vector3 axis = new Vector3(0, 0, -1);
+            _downwardFlag.transform.RotateAround(point, axis, Time.deltaTime * 750f);
+            dropFlag(_downwardFlag);
+        }
+    }
+
+    void setFlag(GameObject flag)
+    {
+        if(flag == null)
+        {
+            return;
+        }
+        if(flag.transform.rotation.z < 1.0f)
+        {
+            _raiseFlag = true;
+            _upwardFlag = flag;
+            return;
+        }
+        _raiseFlag = false;
+    }
+
+    void dropFlag(GameObject flag)
+    {
+        if(flag == null)
+        {
+            return;
+        }
+        if(flag.transform.rotation.z > 0.0f)
+        {
+            _lowerFlag = true;
+            _downwardFlag = flag;
+            return;
+        }
+        _lowerFlag = false;
+    }
+
+    /*
+    //(REMOVED DUE TO NOT BEING NEEDED ANY LONGER)
     private GameObject ClosestCP(Vector3 pointPosition)
     {
         gatherCP = GameObject.FindGameObjectsWithTag("CP");
@@ -61,52 +116,5 @@ public class CheckPoint : MonoBehaviour
         }
         return closest;
     }
-
-   void FixedUpdate()
-    {
-        if(_raiseFlag)
-        {
-            Vector3 point = new Vector3(0, 0, 0);
-            Vector3 axis = new Vector3(0, 0, 1);
-            _upwardFlag.transform.RotateAround(point, axis, Time.deltaTime * 5f);
-            setFlag(_upwardFlag);
-        }
-        if(_lowerFlag)
-        {
-            Vector3 point = new Vector3(0, 0, 0);
-            Vector3 axis = new Vector3(0, 0, 0);
-            _downwardFlag.transform.RotateAround(point, axis, Time.deltaTime * 5f);
-            dropFlag(_downwardFlag);
-        }
-    }
-
-    void setFlag(GameObject flag)
-    {
-        if(flag == null)
-        {
-            return;
-        }
-        if(flag.transform.rotation.z >= 180.0f)
-        {
-            _raiseFlag = true;
-            _upwardFlag = flag;
-            return;
-        }
-        _raiseFlag = false;
-    }
-
-    void dropFlag(GameObject flag)
-    {
-        if(flag == null)
-        {
-            return;
-        }
-        if(flag.transform.rotation.z <= 0.0f)
-        {
-            _lowerFlag = true;
-            _downwardFlag = flag;
-            return;
-        }
-        _lowerFlag = false;
-    }
+    */
 }

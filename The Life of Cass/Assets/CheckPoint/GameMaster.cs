@@ -6,20 +6,18 @@ public class GameMaster : MonoBehaviour
 {
     private static GameMaster _instance;
     public GameObject activeCP;
-    public Vector3 spawnPosition;
+
+    [SerializeField]public Vector3 spawnPosition = new Vector3(0, 0, 0);
     
     void Awake()
     {
         if(_instance == null)
         {
-            Debug.Log("if");
             _instance = this;
             DontDestroyOnLoad(_instance);
-            //DontDestroyOnLoad(activeCP);
         }
         else
         {
-            Debug.Log("else");
             Destroy(gameObject);
         }
     }
