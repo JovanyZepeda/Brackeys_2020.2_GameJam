@@ -10,8 +10,9 @@ public class CharacterMovement : MonoBehaviour
     public GameObject _character;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
+    public Animator anim;
     public Collider2D _characterCollider;
-    public Collider2D _groundCollider;
+    //public Collider2D _groundCollider;
 
     //Serialized Field Variable Initialization
     [SerializeField] bool _doubleJumpEnabled = false;
@@ -25,10 +26,11 @@ public class CharacterMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         _canJump = false;
         _hasJumped = true;
-        _characterCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
-        _groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>();
+        //_characterCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
+        //_groundCollider = GameObject.FindGameObjectWithTag("Ground").GetComponent<Collider2D>();
     }
 
     //***************
@@ -43,13 +45,19 @@ public class CharacterMovement : MonoBehaviour
         {
             //move right
             _character.transform.position += Vector3.right * _speed * Time.deltaTime;
-            sr.flipX = false;
+            anim.SetBool("isWalking", true);
+            sr.flipX = true;
         }
         else if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             //move left
             transform.position += Vector3.right * -_speed * Time.deltaTime;
-            sr.flipX = true;
+            anim.SetBool("isWalking", true);
+            sr.flipX = false;
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
         }
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
         {
@@ -63,7 +71,6 @@ public class CharacterMovement : MonoBehaviour
                 _canJump = false;
             }
         }
-
         if(rb.velocity.y < 0)
         {
             Vector2 pushDown = new Vector2(0, -1);
@@ -83,11 +90,13 @@ public class CharacterMovement : MonoBehaviour
     {
         _canJump = true;
         _hasJumped = false;
+        anim.SetBool("inAir", false);
     }
 
     private void OnCollisionExit2D(Collision2D collider)
     {
         _canJump = false;
+        anim.SetBool("inAir", true);
         if(_doubleJumpEnabled && !_hasJumped)
         {
             _canJump = true;
