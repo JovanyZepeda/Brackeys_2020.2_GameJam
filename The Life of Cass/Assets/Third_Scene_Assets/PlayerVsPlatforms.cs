@@ -1,32 +1,34 @@
 ﻿using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerVsPlatforms : MonoBehaviour
 {
-    public GameObject Platform;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (collision.gameObject.tag == "Player")
+        if (col.gameObject.CompareTag("Platform"))
         {
 
-            collision.transform.SetParent(transform);
-
+            this.transform.parent = col.transform;
 
         }
-
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+
+
+    private void OnCollisionExit2D(Collision2D col)
     {
-        if(collision.gameObject.tag == "Player")
+        if (col.gameObject.CompareTag("Platform"))
         {
-            collision.transform.SetParent(null);
+
+            this.transform.parent = null;
+
         }
-
-
     }
 
 
