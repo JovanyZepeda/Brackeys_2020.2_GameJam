@@ -78,7 +78,9 @@ public class CharacterMovement : MonoBehaviour
         {
             rb.AddForce(Vector2.down, ForceMode2D.Force);
         }
-
+        //***************
+        //Downward Force for smoother jump feel
+        //***************
     }
 
     //***************
