@@ -71,11 +71,14 @@ public class CharacterMovement : MonoBehaviour
                 _canJump = false;
             }
         }
+        //***************
+        //Downward Force for smoother jump feel
+        //***************
         if(rb.velocity.y < 0)
         {
-            Vector2 pushDown = new Vector2(0, -1);
-            rb.AddForce(pushDown, ForceMode2D.Force);
+            rb.AddForce(Vector2.down, ForceMode2D.Force);
         }
+
     }
 
     //***************
