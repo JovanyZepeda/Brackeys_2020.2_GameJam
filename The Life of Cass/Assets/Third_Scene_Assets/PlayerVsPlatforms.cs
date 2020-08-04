@@ -7,7 +7,7 @@ public class PlayerVsPlatforms : MonoBehaviour
 
     public GameObject player;
 
-
+    /*
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Platform") )
@@ -19,4 +19,5 @@ public class PlayerVsPlatforms : MonoBehaviour
     {
         
     }
+    */
 }
