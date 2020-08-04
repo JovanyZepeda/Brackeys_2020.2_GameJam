@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7861079587191055460}
   - component: {fileID: 7861079587191055463}
   - component: {fileID: 7861079587191055462}
+  - component: {fileID: -8836531557227883998}
   m_Layer: 0
   m_Name: Cass
   m_TagString: Player
@@ -161,3 +162,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 4, y: 2.8}
   m_Direction: 1
+--- !u!114 &-8836531557227883998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861079587191055457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faa9ebd6f33dd549a21a6aeea7988bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
