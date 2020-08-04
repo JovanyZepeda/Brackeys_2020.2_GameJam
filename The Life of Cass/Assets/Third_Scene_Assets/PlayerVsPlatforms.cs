@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class PlayerVsPlatforms : MonoBehaviour
 {
-
+    public GameObject Platform;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
 
-            collision.transform.parent = transform;
+            collision.transform.SetParent(transform);
 
 
         }
