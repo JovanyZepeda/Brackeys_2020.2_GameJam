@@ -69,6 +69,26 @@ public class AudioManager : MonoBehaviour
         }
 
         s.source.Play(); //Play that song
+
+        
+    }
+
+    //This method will stop playing a song from the soundlist
+    //It will need the name of the clip in order to find and stop it
+    //this name is configures in the inspector
+    public void PauseSound(string name)
+    {
+        SoundList s = Array.Find(sounds, sound => sound.name == name); //Find a particula element in the array
+
+        if (s == null) //if we could not find the specified sound clip
+        {
+            Debug.LogWarning("Song with name< " + name + " >was not found");
+            return;
+        }
+
+        s.source.Stop(); //Play that song
+
+
     }
 
 
