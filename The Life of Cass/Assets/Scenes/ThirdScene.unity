@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 41240094}
   - component: {fileID: 41240096}
   - component: {fileID: 41240095}
+  - component: {fileID: 41240097}
+  - component: {fileID: 41240098}
   m_Layer: 0
   m_Name: Tilemap_Water
   m_TagString: Untagged
@@ -882,6 +884,41 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &41240097
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41240093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!253 &41240098
+BuoyancyEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41240093}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_SurfaceLevel: 1
+  m_Density: 119336
+  m_LinearDrag: 5
+  m_AngularDrag: 5
+  m_FlowAngle: 0
+  m_FlowMagnitude: 0
+  m_FlowVariation: 0
 --- !u!1 &93601530
 GameObject:
   m_ObjectHideFlags: 0
@@ -10708,7 +10745,7 @@ PrefabInstance:
     - target: {fileID: 7861079587191055467, guid: e4e2b840d9d031847ac33f62c821b16e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: 50.86
       objectReference: {fileID: 0}
     - target: {fileID: 7861079587191055467, guid: e4e2b840d9d031847ac33f62c821b16e,
         type: 3}
@@ -11670,7 +11707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666737870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -2, z: -10}
+  m_LocalPosition: {x: 50.86, y: -2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1113187119}
@@ -11841,6 +11878,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1764214083}
     m_Modifications:
+    - target: {fileID: 3030925639800100428, guid: f6d22775cdb8f8f4d934e1bbc9eadbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3030925640870913945, guid: f6d22775cdb8f8f4d934e1bbc9eadbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3030925640877132556, guid: f6d22775cdb8f8f4d934e1bbc9eadbf9,
         type: 3}
       propertyPath: m_Name
@@ -11900,6 +11947,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3030925641424526070, guid: f6d22775cdb8f8f4d934e1bbc9eadbf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6d22775cdb8f8f4d934e1bbc9eadbf9, type: 3}
@@ -12070,7 +12122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136811632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -2, z: -10}
+  m_LocalPosition: {x: 50.86, y: -2, z: -10}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12253,20 +12305,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8000984715933749845, guid: 0dbe2528c7e6b454ca34b04dfa0d48d3,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8000984715933749845, guid: 0dbe2528c7e6b454ca34b04dfa0d48d3,
-        type: 3}
-      propertyPath: BypassListenerEffects
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8000984715933749846, guid: 0dbe2528c7e6b454ca34b04dfa0d48d3,
         type: 3}
       propertyPath: m_Name
-      value: WaterSound
+      value: WaterSoundFloat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dbe2528c7e6b454ca34b04dfa0d48d3, type: 3}
