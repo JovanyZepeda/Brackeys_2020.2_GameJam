@@ -33,7 +33,10 @@ public class CheckPoint : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            if(gm.activeCP == this.transform.parent.gameObject)
+            FindObjectOfType<AudioManager>().PlaySound("Flag"); //play the flag sound clip when flag is raised
+
+
+            if (gm.activeCP == this.transform.parent.gameObject)
             {
                 Debug.Log("YOS");
                 return;
@@ -53,6 +56,8 @@ public class CheckPoint : MonoBehaviour
     {
         if(_raiseFlag)
         {
+            
+
             Vector3 point = _upwardFlag.transform.position;
             Vector3 axis = new Vector3(0, 0, 1);
             _upwardFlag.transform.RotateAround(point, axis, Time.deltaTime * 750f);
