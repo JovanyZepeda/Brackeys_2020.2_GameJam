@@ -46,7 +46,31 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 080063285cbebc54c889476ded654183, type: 3}
-    volume: 0.12
+    volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 7cd61d5db60ec204e9d73d42d5bfd41b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MenuClick
+    clip: {fileID: 8300000, guid: fb41515088093714c8a1f11dd0f7c069, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: 7cd61d5db60ec204e9d73d42d5bfd41b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Resume
+    clip: {fileID: 8300000, guid: 0df92e5523a40bb4b88935b861d9141f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
