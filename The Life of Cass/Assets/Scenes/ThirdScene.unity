@@ -2033,16 +2033,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4538847572184186137, guid: cd1c66a399baed846a248a14d89657c9,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4538847572184186137, guid: cd1c66a399baed846a248a14d89657c9,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1c66a399baed846a248a14d89657c9, type: 3}
 --- !u!1 &800290445
@@ -10920,7 +10910,7 @@ MonoBehaviour:
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.6082902
+  m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -11659,7 +11649,7 @@ MonoBehaviour:
   m_Follow: {fileID: 510473947}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 3.75
+    OrthographicSize: 5.190523
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -12056,7 +12046,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.75
+  orthographic size: 5.190523
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
