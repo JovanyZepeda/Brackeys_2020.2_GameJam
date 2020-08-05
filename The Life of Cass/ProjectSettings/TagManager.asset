@@ -8,6 +8,8 @@ TagManager:
   - GM
   - CP
   - Platform
+  - Enemy
+  - FinalCheckpoint
   layers:
   - Default
   - TransparentFX

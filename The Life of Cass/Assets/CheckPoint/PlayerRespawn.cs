@@ -28,7 +28,14 @@ public class PlayerRespawn : MonoBehaviour
     void Update()
     {
         //If the 'R' key is pressed
-        if(Input.GetKeyDown(KeyCode.R))
+        RespawnPlayer();
+    }
+
+
+    private static void RespawnPlayer()
+    {
+        //If the 'R' key is pressed
+        if (Input.GetKeyDown(KeyCode.R))
         {
             //Reload the current scene you are in
             //Reloading the current scene will destroy all objects and recreate them
@@ -36,4 +43,13 @@ public class PlayerRespawn : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
+    public static void KillPlayer()
+    {
+        //Reload the current scene you are in
+        //Reloading the current scene will destroy all objects and recreate them
+        //Objects that are used in the DontDestroyOnLoad() function are not deleted
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
