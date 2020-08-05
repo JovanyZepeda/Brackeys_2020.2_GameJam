@@ -88,6 +88,8 @@ public class CharacterMovement : MonoBehaviour
     //***************
     private void jump()
     {
+        FindObjectOfType<AudioManager>().PlaySound("Jump");
+
         rb.velocity = new Vector2(0, _jumpPower);
     }
 
