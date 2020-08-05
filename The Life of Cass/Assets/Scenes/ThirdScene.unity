@@ -1388,7 +1388,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166492541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 709234482}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &166492541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,6 +2140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0831de5bfe9a645838dbda5bb60a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenuUI: {fileID: 1859761842}
 --- !u!1 &725207489
 GameObject:
   m_ObjectHideFlags: 0
@@ -10741,7 +10753,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1184214954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 709234482}
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1184214954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11052,7 +11075,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433782460}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -1.414839e-23, y: -0.000000023841858, z: -3.3732393e-31, w: 1}
   m_LocalPosition: {x: -7.2289906, y: -0.6146362, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11141,7 +11164,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1497753740}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 709234482}
+        m_MethodName: Mute
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1497753740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11266,7 +11300,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1540715526}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 709234482}
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1540715526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12013,7 +12058,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 3.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12036,7 +12081,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136811632}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -1.414839e-23, y: -0.000000023841858, z: -3.3732393e-31, w: 1}
   m_LocalPosition: {x: -7.2289906, y: -0.6146362, z: -10}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
