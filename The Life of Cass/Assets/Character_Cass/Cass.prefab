@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7861079587191055462}
   - component: {fileID: -8836531557227883998}
   - component: {fileID: -9091897034868529738}
+  - component: {fileID: 961888369}
   m_Layer: 0
   m_Name: Cass
   m_TagString: Player
@@ -143,7 +144,6 @@ MonoBehaviour:
   rb: {fileID: 0}
   sr: {fileID: 0}
   anim: {fileID: 0}
-  _characterCollider: {fileID: 0}
   _doubleJumpEnabled: 0
   _jumpPower: 6.5
   _speed: 4.5
@@ -187,5 +187,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbfb3278f24656d499d54911e4ceb191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offsetY: 1
   offsetX: -1
+  offsetY: 1
+--- !u!114 &961888369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861079587191055457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d9d4f8c5c49d53408f2e238abde2651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
