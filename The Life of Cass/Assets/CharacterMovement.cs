@@ -45,8 +45,18 @@ public class CharacterMovement : MonoBehaviour
             //move right with set speed
             _character.transform.position += Vector3.right * _speed * Time.deltaTime;
 
-            //set walking animation
-            anim.SetBool("isWalking", true);
+            //set walking animation if Cass is not in the air
+            if (_canJump)
+            {
+                anim.SetBool("isWalking", true);
+            }
+            else if (!_canJump)
+            {
+                //If not walking, then dont play the walking animation
+                anim.SetBool("isWalking", false);
+            }
+
+
 
             //Flip the character asset around the x axis
             sr.flipX = true;
@@ -58,8 +68,15 @@ public class CharacterMovement : MonoBehaviour
             //move left with set speed
             transform.position += Vector3.right * -_speed * Time.deltaTime;
 
-            //set walking animation
-            anim.SetBool("isWalking", true);
+            //set walking animation if Cass is not in the air
+            if (_canJump)
+            {
+                anim.SetBool("isWalking", true);
+            } else if (!_canJump)
+            {
+                //If not walking, then dont play the walking animation
+                anim.SetBool("isWalking", false);
+            }
 
             //Set character asset around to the normal x axis
             sr.flipX = false;
