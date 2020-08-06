@@ -7,15 +7,21 @@ public class CharacterMovement : MonoBehaviour
     //Variable Declaration
     private bool _canJump;
     private bool _hasJumped;
+    private float _slopeCheckDistance = 0.5f;
+    private CapsuleCollider2D cc;
     public GameObject _character;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
     public Animator anim;
+    
+    //private vector variables
+    private Vector2 colliderSize;
 
     //Serialized Field Variable Initialization
     [SerializeField] bool _doubleJumpEnabled = false;
     [SerializeField] float _jumpPower = 6.5f;
-    [SerializeField] float _speed = 4.5f;
+    [SerializeField] float _speed = 4.5f; 
+    [SerializeField] private LayerMask WhatIsGround;
 
     //***************
     //Awake Function to run on creation of the object
@@ -26,6 +32,9 @@ public class CharacterMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        cc = GetComponent<CapsuleCollider2D>();
+        colliderSize = cc.size;
+
         _canJump = false;
         _hasJumped = true;
     }
@@ -35,12 +44,80 @@ public class CharacterMovement : MonoBehaviour
     //***************
     private void Update()
     {
+        CheckInput(); // This is move the character
+
+    }
+
+
+
+
+    private void FixedUpdate()
+    {
+        SLopeCheck();
+    }
+
+
+
+
+
+
+
+
+
+
+    //***************
+    //Jump function to allow character to jump depending on their object state
+    //***************
+    private void jump()
+    {
+        //Play the jumping Sound effect
+        FindObjectOfType<AudioManager>().PlaySound("Jump");
+
+        //Set a new upward velocity to the character to simulate a jumping effect
+        rb.velocity = new Vector2(0, _jumpPower);
+    }
+
+
+
+    private void SLopeCheck()
+    {
+        Debug.Log("CheckSLope");
+
+
+        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y / 2);
+
+        SlopeCheckVertical(checkPos);
+
+    }
+     
+    private void  SlopeCheckHorizontal(Vector2 checkPos)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, _slopeCheckDistance, WhatIsGround.value);
+
+    }
+
+    private void SlopeCheckVertical( Vector2 checkPos)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.up, _slopeCheckDistance, WhatIsGround.value);
+
+        if (hit)
+        {
+            Debug.DrawRay(hit.point, hit.normal, Color.blue);
+
+        }
+
+    }
+
+
+
+    private void CheckInput()
+    {
         //***************
         //Control statements for character movement for moving left, right, and jumping
         //***************
 
         //Right Movement
-        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             //move right with set speed
             _character.transform.position += Vector3.right * _speed * Time.deltaTime;
@@ -63,7 +140,7 @@ public class CharacterMovement : MonoBehaviour
         }
 
         //Left Movement
-        else if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             //move left with set speed
             transform.position += Vector3.right * -_speed * Time.deltaTime;
@@ -72,7 +149,8 @@ public class CharacterMovement : MonoBehaviour
             if (_canJump)
             {
                 anim.SetBool("isWalking", true);
-            } else if (!_canJump)
+            }
+            else if (!_canJump)
             {
                 //If not walking, then dont play the walking animation
                 anim.SetBool("isWalking", false);
@@ -88,16 +166,16 @@ public class CharacterMovement : MonoBehaviour
         }
 
         //Jumping Movement
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
         {
             //call jump function
-            if(_canJump)
+            if (_canJump)
             {
                 jump();
             }
 
             //If you already used all of your jumps, then you cannot jump again
-            if(_hasJumped)
+            if (_hasJumped)
             {
                 _canJump = false;
             }
@@ -105,24 +183,17 @@ public class CharacterMovement : MonoBehaviour
         //***************
         //Downward Force for smoother jump feel
         //***************
-        if(rb.velocity.y < 0)
+        if (rb.velocity.y < 0)
         {
             //add a slight downward force to the character
             rb.AddForce(Vector2.down, ForceMode2D.Force);
         }
     }
 
-    //***************
-    //Jump function to allow character to jump depending on their object state
-    //***************
-    private void jump()
-    {
-        //Play the jumping Sound effect
-        FindObjectOfType<AudioManager>().PlaySound("Jump");
 
-        //Set a new upward velocity to the character to simulate a jumping effect
-        rb.velocity = new Vector2(0, _jumpPower);
-    }
+
+
+
 
     //Call function if the player has interacted with another object such as the ground
     private void OnCollisionEnter2D(Collision2D collider)
@@ -134,6 +205,12 @@ public class CharacterMovement : MonoBehaviour
         //stop playing the jump animation
         anim.SetBool("inAir", false);
     }
+
+
+
+
+
+
 
     //Call function if the player has left another object such as the ground
     private void OnCollisionExit2D(Collision2D collider)

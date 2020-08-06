@@ -7915,7 +7915,7 @@ GameObject:
   - component: {fileID: 1005893659}
   - component: {fileID: 1005893658}
   - component: {fileID: 1005893660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap_Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71094,6 +71094,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cass
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055460, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055460, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.85657704
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055462, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055463, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: WhatIsGround.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055463, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: _slopeCheckDistance
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7861079587191055466, guid: e4e2b840d9d031847ac33f62c821b16e,
         type: 3}
