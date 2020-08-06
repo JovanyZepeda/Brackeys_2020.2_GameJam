@@ -7,7 +7,10 @@ public class CharacterMovement : MonoBehaviour
     //Variable Declaration
     private bool _canJump;
     private bool _hasJumped;
+    private bool _IsOnSlope;
+    private float _slopeDownAngleOld;
     private float _slopeCheckDistance = 0.5f;
+    private float _slopeDownAngle;
     private CapsuleCollider2D cc;
     public GameObject _character;
     public Rigidbody2D rb;
@@ -16,6 +19,7 @@ public class CharacterMovement : MonoBehaviour
     
     //private vector variables
     private Vector2 colliderSize;
+    private Vector2 slopeNormalPerp; 
 
     //Serialized Field Variable Initialization
     [SerializeField] bool _doubleJumpEnabled = false;
@@ -92,16 +96,30 @@ public class CharacterMovement : MonoBehaviour
      
     private void  SlopeCheckHorizontal(Vector2 checkPos)
     {
-        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, _slopeCheckDistance, WhatIsGround.value);
+        
 
     }
 
     private void SlopeCheckVertical( Vector2 checkPos)
     {
-        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.up, _slopeCheckDistance, WhatIsGround.value);
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, _slopeCheckDistance, WhatIsGround.value);
 
         if (hit)
         {
+            slopeNormalPerp = Vector2.Perpendicular(hit.normal);
+
+            _slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
+
+
+            if(_slopeDownAngle != _slopeDownAngleOld)
+            {
+                _IsOnSlope = true;
+            }
+
+
+            _slopeDownAngleOld = _slopeDownAngle; 
+
+            Debug.DrawRay(hit.point, slopeNormalPerp, Color.red);
             Debug.DrawRay(hit.point, hit.normal, Color.blue);
 
         }
