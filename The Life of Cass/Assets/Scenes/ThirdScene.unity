@@ -73197,6 +73197,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cass
       objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055463, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: FullFriction
+      value: 
+      objectReference: {fileID: 6200000, guid: f35af20c2ebd50f4496b8071423ecb4c, type: 2}
+    - target: {fileID: 7861079587191055463, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: noFriction
+      value: 
+      objectReference: {fileID: 6200000, guid: 3b094c50e7a86d143b48e2c818d2a253, type: 2}
+    - target: {fileID: 7861079587191055463, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7861079587191055467, guid: e4e2b840d9d031847ac33f62c821b16e,
         type: 3}
       propertyPath: m_LocalPosition.x

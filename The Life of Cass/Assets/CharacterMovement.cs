@@ -7,10 +7,7 @@ public class CharacterMovement : MonoBehaviour
     //Variable Declaration
     private bool _canJump;
     private bool _hasJumped;
-    private bool _IsOnSlope;
-    private float _slopeDownAngleOld;
-    private float _slopeCheckDistance = 0.5f;
-    private float _slopeDownAngle;
+
     private CapsuleCollider2D cc;
     public GameObject _character;
     public Rigidbody2D rb;
@@ -25,7 +22,6 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] bool _doubleJumpEnabled = false;
     [SerializeField] float _jumpPower = 6.5f;
     [SerializeField] float _speed = 4.5f; 
-    [SerializeField] private LayerMask WhatIsGround;
 
     //***************
     //Awake Function to run on creation of the object
@@ -55,13 +51,7 @@ public class CharacterMovement : MonoBehaviour
 
 
 
-    private void FixedUpdate()
-    {
-        SLopeCheck();
-    }
-
-
-
+  
 
 
 
@@ -83,62 +73,23 @@ public class CharacterMovement : MonoBehaviour
 
 
 
-    private void SLopeCheck()
-    {
-        Debug.Log("CheckSLope");
-
-
-        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y / 2);
-
-        SlopeCheckVertical(checkPos);
-
-    }
-     
-    private void  SlopeCheckHorizontal(Vector2 checkPos)
-    {
-        
-
-    }
-
-    private void SlopeCheckVertical( Vector2 checkPos)
-    {
-        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, _slopeCheckDistance, WhatIsGround.value);
-
-        if (hit)
-        {
-            slopeNormalPerp = Vector2.Perpendicular(hit.normal);
-
-            _slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
-
-
-            if(_slopeDownAngle != _slopeDownAngleOld)
-            {
-                _IsOnSlope = true;
-            }
-
-
-            _slopeDownAngleOld = _slopeDownAngle; 
-
-            Debug.DrawRay(hit.point, slopeNormalPerp, Color.red);
-            Debug.DrawRay(hit.point, hit.normal, Color.blue);
-
-        }
-
-    }
 
 
 
-    private void CheckInput()
+    private void CheckInput() //This method will check the keyboard inputs and move the character accordingly
     {
         //***************
         //Control statements for character movement for moving left, right, and jumping
         //***************
+
+
 
         //Right Movement
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             //move right with set speed
             _character.transform.position += Vector3.right * _speed * Time.deltaTime;
+
 
             //set walking animation if Cass is not in the air
             if (_canJump)
@@ -151,6 +102,7 @@ public class CharacterMovement : MonoBehaviour
                 anim.SetBool("isWalking", false);
             }
 
+         
 
 
             //Flip the character asset around the x axis
@@ -235,6 +187,8 @@ public class CharacterMovement : MonoBehaviour
     {
         //player is in the air and cannot jump
         _canJump = false;
+
+
 
         //Check if double jumping is allowed
         if(_doubleJumpEnabled && !_hasJumped)
