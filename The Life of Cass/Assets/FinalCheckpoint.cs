@@ -38,10 +38,7 @@ public class FinalCheckpoint : MonoBehaviour
                     gm.spawnPosition = spawn3;
                     break;
                 }
-                otherwise:
-                {
-                    break;
-                }
+
             }
             FindObjectOfType<LevelLoader>().LoadNextScene();
         }
