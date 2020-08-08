@@ -21,19 +21,19 @@ public class FinalCheckpoint : MonoBehaviour
             {
                 case 1:
                 {
-                    Vector3 spawn1 = new Vector3(-10f, 0f, 0f);
+                    Vector3 spawn1 = new Vector3(-9.5f, 0f, 0f);
                     gm.spawnPosition = spawn1;
                     break;
                 }
                 case 2:
                 {
-                    Vector3 spawn2 = new Vector3(-6.5f, -2f, 0f);
+                    Vector3 spawn2 = new Vector3(-6.5f, -1.75f, 0f);
                     gm.spawnPosition = spawn2;
                     break;
                 }
                 case 3:
                 {
-                    Vector3 spawn3 = new Vector3(-6.5f, -2f, 0f);
+                    Vector3 spawn3 = new Vector3(-6.5f, -1.5f, 0f);
                     gm.spawnPosition = spawn3;
                     break;
                 }
