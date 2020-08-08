@@ -13,7 +13,7 @@ public class PlayerVsEnemies : MonoBehaviour
         if (other.CompareTag("Enemy")) //if the collided object was the tag Enemy then player respawns
         {
 
-            Debug.Log("Kill Player");
+           // Debug.Log("Kill Player");
             PlayerRespawn.KillPlayer();
         }
 
