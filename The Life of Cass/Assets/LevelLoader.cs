@@ -10,12 +10,19 @@ public class LevelLoader : MonoBehaviour
 
 
     public float transitionTIme = 1f;
+    public int _buildIndex;
 
 
 
     public void LoadNextScene()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+
+    }
+
+    public  void LoadScene()
+    {
+        StartCoroutine(LoadLevel(_buildIndex));
 
     }
 
