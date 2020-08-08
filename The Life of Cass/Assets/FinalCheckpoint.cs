@@ -19,7 +19,7 @@ public class FinalCheckpoint : MonoBehaviour
             int sceneNumber = SceneManager.GetActiveScene().buildIndex + 1;
             switch(sceneNumber)
             {
-                case 2:
+                case 2 || 5:
                 {
                     Vector3 spawn1 = new Vector3(-9.5f, 0f, 0f);
                     gm.spawnPosition = spawn1;
