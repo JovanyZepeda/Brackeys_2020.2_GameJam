@@ -6205,6 +6205,7 @@ GameObject:
   - component: {fileID: 266747602}
   - component: {fileID: 266747601}
   - component: {fileID: 266747604}
+  - component: {fileID: 266747605}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6311,6 +6312,27 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!320 &266747605
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266747600}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 588670c6c91e3054b97f50fca2078f58, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6364555934662338549, guid: 588670c6c91e3054b97f50fca2078f58, type: 2}
+    value: {fileID: 2087163765}
+  - key: {fileID: 931283893071679706, guid: 588670c6c91e3054b97f50fca2078f58, type: 2}
+    value: {fileID: 2087163765}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &607536972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6917,6 +6939,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055466, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7861079587191055467, guid: e4e2b840d9d031847ac33f62c821b16e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7021,3 +7048,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2087163765 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7861079587191055461, guid: e4e2b840d9d031847ac33f62c821b16e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1911756037}
+  m_PrefabAsset: {fileID: 0}
