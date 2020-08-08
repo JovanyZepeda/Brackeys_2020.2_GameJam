@@ -22,6 +22,8 @@ public class MainMenuController : MonoBehaviour
     //This means that anythingin that object can use these funcitions
     public void PlayGame() 
     {
+
+        FindObjectOfType<AudioManager>().PlaySound("MenuClick");
         //Change the spawn point back to the beginning of Scene1 on a new game
 
         //This essentially changes the active scene to the next one in line according to build index

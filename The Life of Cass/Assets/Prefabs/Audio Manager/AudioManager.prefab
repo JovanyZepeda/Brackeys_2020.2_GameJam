@@ -52,13 +52,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 7cd61d5db60ec204e9d73d42d5bfd41b, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: MenuClick
     clip: {fileID: 8300000, guid: fb41515088093714c8a1f11dd0f7c069, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -70,13 +70,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Resume
     clip: {fileID: 8300000, guid: 0df92e5523a40bb4b88935b861d9141f, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Flag
     clip: {fileID: 8300000, guid: 82ef3cff6f2f86a49903b40b7ab34103, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}

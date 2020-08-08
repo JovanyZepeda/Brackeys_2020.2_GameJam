@@ -1040,6 +1040,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cass
       objectReference: {fileID: 0}
+    - target: {fileID: 7861079587191055466, guid: e4e2b840d9d031847ac33f62c821b16e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7861079587191055467, guid: e4e2b840d9d031847ac33f62c821b16e,
         type: 3}
       propertyPath: m_LocalPosition.x
